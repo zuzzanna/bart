@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Úroveň 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/SCSS/index.css">
+</head>
+<body>
+
+<!--
+shttps://getbootstrap.com/docs/4.3/layout/grid/
+https://getbootstrap.com/docs/4.3/components/alerts/
+-->
+
+<div class="col-12 header" id="header">
+</div>
+
+<div class="col-12">
+    <div class="row">
+        <div class="container">
+            <div class="col-12">
+                <h1>FOTOGALÉRIA</h1>
+                <br>
+                <h2>KATEGÓRIE</h2>
+                <hr>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
+                         onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
+                        <div class="category">
+                            <img src="assets/images/images/landscape-meadow-field-mountains-66874.jpeg"
+                                 class="card-img-top"
+                                 alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Príroda</h5>
+                                <p>1 fotka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
+                         onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
+                        <div class="category">
+                            <img src="assets/images/images/pexels-photo-261187.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Architektúra</h5>
+                                <p>6 fotiek</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
+                         onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
+                        <div class="category">
+                            <img src="assets/images/images/pexels-photo-27411.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ľudia</h5>
+                                <p>1 fotka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
+                         onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
+                        <div class="category">
+                            <img src="assets/images/images/food-salad-healthy-lunch.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jedlo</h5>
+                                <p>1 fotka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
+                         onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
+                        <div class="category">
+                            <img src="assets/images/images/pexels-photo-210019.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Autá</h5>
+                                <p>1 fotka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4" data-toggle="modal"
+                         data-target="#exampleModal">
+                        <div class="category add_category">
+                            <div class="center">
+                                <img src="assets/images/icons/add_icon.svg" alt="...">
+                                <h4>Pridať kategóriu</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>webdesign bart.sk</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times; Zavrieť</span>
+        </button>
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">Pridať kategóriu</h5>
+            </div>
+            <div class="modal-footer">
+                <input type="text" id="fname" name="fname" value="ZADAJTE NÁZOV KATEGÓRIE">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script>
+    function show_img_bacground(parent) {
+        var path = parent.getElementsByTagName("img")[0].getAttribute("src");
+        document.getElementById("header").style.background = "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('" + path + "') repeat scroll 70% 60%";
+        document.getElementById("header").classList.add("bg_image")
+    }
+
+    function hide_img_bacground() {
+        document.getElementById("header").style.background = "darkgray";
+        document.getElementById("header").classList.remove("bg_image");
+    }
+</script>
+
+</html>
