@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Autá</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/SCSS/index.css">
+    <link rel="stylesheet" href="../assets/SCSS/categories.css">
+</head>
+<body>
+
+<!--
+https://codepen.io/dashbouquetdevelopment/pen/mBvQrB
+-->
+
+<div class="col-12 header" id="header">
+    <div class="row">
+
+    </div>
+</div>
+
+<div class="col-12 architecture">
+    <div class="row">
+        <div class="container">
+            <div class="col-12 title">
+                <h1>FOTOGALÉRIA</h1>
+                <br>
+                <img src="../assets/images/icons/back_icon.svg" alt="">
+                <a href="../index.html"><h2>Autá</h2></a>
+                <hr>
+            </div>
+
+            <div class="col-12">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom">
+                            <a class="lightbox" href="../assets/images/images/pexels-photo-210019.jpeg">
+                                <img src="../assets/images/images/pexels-photo-210019.jpeg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4" data-toggle="modal"
+                             data-target="#exampleModal">
+                            <div class="category add_category">
+                                <div class="center">
+                                    <img src="../assets/images/icons/Shape_6.svg" alt="...">
+                                    <h4>Pridať fotky</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>webdesign bart.sk</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="close_icon" src=".././assets/images/icons/close_icon.svg" alt="">
+            <span aria-hidden="true">Zavrieť</span>
+        </button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Pridať fotky</h3>
+            </div>
+            <div class="modal-body">
+                <img src="../assets/images/icons/Shape_6.svg" class="modal_image" alt="...">
+                <h4>Sem presunte fotky</h4>
+                <p>alebo</p>
+                <button type="button"> Vyberte súbory</button>
+            </div>
+            <div class="modal-footer">
+                <form action="">
+                    <button type="button">
+                        <img src=".././assets/images/icons/add_icon.svg" alt="">
+                        <span aria-hidden="true">Pridať</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script src="../assets/js/gallery.js"></script>
+
+
+</html>

@@ -13,6 +13,8 @@
 <!--
 shttps://getbootstrap.com/docs/4.3/layout/grid/
 https://getbootstrap.com/docs/4.3/components/alerts/
+https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+https://www.programator.sk/pridaj-sa.php#number-1
 -->
 
 <div class="col-12 header" id="header">
@@ -40,6 +42,7 @@ https://getbootstrap.com/docs/4.3/components/alerts/
                                 <p>1 fotka</p>
                             </div>
                         </div>
+                        <a class="tab_link" href='categories/nature.html'></a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
                          onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
@@ -50,6 +53,7 @@ https://getbootstrap.com/docs/4.3/components/alerts/
                                 <p>6 fotiek</p>
                             </div>
                         </div>
+                        <a class="tab_link" href='categories/architecture.html'></a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
                          onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
@@ -60,6 +64,7 @@ https://getbootstrap.com/docs/4.3/components/alerts/
                                 <p>1 fotka</p>
                             </div>
                         </div>
+                        <a class="tab_link" href='categories/people.html'></a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
                          onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
@@ -70,6 +75,7 @@ https://getbootstrap.com/docs/4.3/components/alerts/
                                 <p>1 fotka</p>
                             </div>
                         </div>
+                        <a class="tab_link" href='categories/food.html'></a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4 zoom"
                          onmouseover="show_img_bacground(this)" onmouseout="hide_img_bacground()">
@@ -80,12 +86,13 @@ https://getbootstrap.com/docs/4.3/components/alerts/
                                 <p>1 fotka</p>
                             </div>
                         </div>
+                        <a class="tab_link" href='categories/cars.html'></a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4" data-toggle="modal"
                          data-target="#exampleModal">
                         <div class="category add_category">
                             <div class="center">
-                                <img src="assets/images/icons/add_icon.svg" alt="...">
+                                <img src="assets/images/icons/Shape_1.svg" alt="...">
                                 <h4>Pridať kategóriu</h4>
                             </div>
                         </div>
@@ -106,15 +113,21 @@ https://getbootstrap.com/docs/4.3/components/alerts/
 
     <div class="modal-dialog" role="document">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times; Zavrieť</span>
+            <img src="./assets/images/icons/close_icon.svg" alt="">
+            <span aria-hidden="true">Zavrieť</span>
         </button>
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="modal-title" id="exampleModalLabel">Pridať kategóriu</h5>
+                <h3 class="modal-title" id="exampleModalLabel">Pridať kategóriu</h3>
             </div>
             <div class="modal-footer">
-                <input type="text" id="fname" name="fname" value="ZADAJTE NÁZOV KATEGÓRIE">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <form action="">
+                    <input type="text" id="fname" name="fname" value="ZADAJTE NÁZOV KATEGÓRIE">
+                    <button type="button">
+                        <img src="./assets/images/icons/add_icon.svg" alt="">
+                        <span aria-hidden="true">Pridať</span>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
